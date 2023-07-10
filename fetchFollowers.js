@@ -1,5 +1,9 @@
-const url = "https://api.github.com/users/glitton/followers?per_page=15";
+const url = "https://api.github.com/users/glitton/followers?per_page=12";
 
-const fetchFollowers = async () => {};
+const fetchFollowers = async () => {
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+};
 
 export default fetchFollowers;
