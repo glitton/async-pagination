@@ -1,4 +1,4 @@
-const url = "https://api.github.com/users/glitton/followers?per_page=12";
+const url = "https://api.github.com/users/glitton/followers?per_page=100";
 
 const fetchFollowers = async () => {
   const response = await fetch(url);
